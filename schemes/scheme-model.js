@@ -23,9 +23,16 @@ function remove(ID){
   .del()
 }
 
+function add(scheme){
+  return db('schemes').insert(scheme)
+}
+
+
+
 module.exports = {
   find,
   findById,
   findSteps,
   remove,
+  add,
 }
